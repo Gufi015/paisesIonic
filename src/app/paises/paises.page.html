@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button  defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Paises</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- <ion-card>
+    <ion-card-content> -->
+      <ion-list inset *ngFor="let pais of paises; let i = index;">
+        <h1 text-center>{{pais.name | uppercase}}</h1>
+        <ion-item lines="none">
+          <ion-img src="{{pais.flag}}"></ion-img>
+           <ion-button slot="end" expand="block" (click)="onClick(i)">ver</ion-button>
+        </ion-item>
+      </ion-list>
+
+    <!-- </ion-card-content>
+  </ion-card> -->
+
+</ion-content>
